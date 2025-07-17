@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fetch note</title>
+  <style>
+    body { font-family: Arial, sans-serif; font-size: 8px; width: 2000px}
+    button { padding: 4px 6px; }
+	.toRight { padding: 0 0 0 330px;}
+	.radioTab {
+	  padding: 10px;
+	  border-style: 1px solid #1F1F1F;
+	  border-bottom: 0px;
+	  opacity: 0.5;
+	  z-index:99;
+	}
+	.current { opacity: 1; background-color: #F1F1F1;}
+	textarea { background-color: #F1F1F1; border:0px; }
+	.message { background-color: #FBFBFB; border:1px solid grey; }
+  </style>
+</head>
+<body>
+  <form>
+  <span class="radioTab current" id="Movie"><input type="radio" id="Movies" name="type" value="1"><label for="Movies">Movies</label></span><span class="radioTab" id="Word"><input type="radio" id="Words" name="type" value="2"><label for="Words">Words</label></span><span class="radioTab" id="Prop"><input type="radio" id="Props" name="type" value="3"><label for="Props">Props</label></span>
+  <span class="toRight">
+  <button id="captureNote"><label accesskey="g"><u>G</u>rab it!</label></button>
+  <button id="copyNotes"><label accesskey="c"><u>C</u>opy</label></button>
+  <button id="downloadNotes"><label accesskey="e"><u>D</u>ownload</label></button>
+  <button id="cleanAll"><label accesskey="e"><u>R</u>eset it!</label></button>
+  </span>
+  <br/><textarea id="result" rows="15" cols="104" value="" class ="divisions"></textarea>
+  <br/><textarea id="message" rows="1" cols="104" value="" class ="message" disabled></textarea>
+  </form>
+  <script src="popup.js"></script>
+</body>
+</html>
