@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Mandaring Blueprint Traverse Extractor",
+  "name": "Mandarin Blueprint Traverse Extractor",
   "version": "1.0",
   "description": "Reads data from traverse.link and grabs the many elements on the page",
   "permissions": [
